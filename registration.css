@@ -1,0 +1,379 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: whitesmoke;
+    margin:0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* header */
+
+header{
+    background-color:#534d64;
+    color:white;
+    padding:25px;
+}
+
+.logo img{
+    height: 50px; 
+    width:200px;
+    border-radius:25px;
+    float: left;
+    margin-top:-33px;
+    margin-left:-10px;
+    pointer-events: none;
+}
+
+header a{
+    float:right;
+    color:white;
+    font-size: 20px;
+    text-decoration: none;
+    margin:15px;
+    margin-top: -20px;
+}
+
+header a:hover{
+    color:white;
+    font-weight: 900;
+}
+
+/* flex and column */
+
+.flex{
+    flex-direction: row;
+    display:flex;
+    height:85vh;
+}
+
+.right{
+    width:40%;
+    position:relative;
+   
+}
+
+.left{
+    width:60%;
+    background-color:rgb(112,128,144);
+}
+
+/* textbox and inputs */
+
+.textbox{
+    text-align: center;
+    border:2px solid white;
+    width:300px;
+    height:540px;
+    position:absolute; 
+    margin-left: 135px;  
+    margin-top:7px ;
+    background-color:white;
+    color:Black;
+    box-shadow: 3px 3px 5px 6px #ccc;
+}
+
+.textbox h1{
+    border-bottom: 5px solid tomato;
+    width:140px;
+    margin-left: 75px;
+    text-align: center; 
+    margin-top: 15px;
+   
+}
+
+.uname{
+    color:black;
+    font-size:14px;
+    margin-left: 36px;
+    margin-top: -8px; 
+    position:absolute;
+}
+
+.mobile{
+    color:black;
+    font-size:14px;
+    margin-left: 36px;
+    margin-top: -8px; 
+    position:absolute;
+}
+
+.email{
+    color:black;
+    font-size:14px;
+    margin-left: 36px;
+    margin-top: -8px; 
+    position:absolute;
+}
+
+.dob{
+    color:black;
+    font-size:14px;
+    margin-left: 36px;
+    margin-top:-8px; 
+    position:absolute;
+}
+
+.gender{
+    color:black;
+    font-size:14px;
+    margin-left: 36px;
+    margin-top:-8px; 
+    position:absolute;
+}
+
+.gender .choose{
+    width:14px;
+    height:14px;
+}
+
+
+.in2, .terms, .next{
+   margin-top: 32px;
+   border:none;
+   border: 2px solid grey;
+   background-color:white;
+   color:rgb(112,128,144);
+   outline:none;
+   width: 230px;
+   height:30px;
+   border-radius: 6px;
+}
+
+.radin{
+    display: flex;
+    margin-top: 38px;
+    margin-left: 5px ;
+    justify-content: space-evenly;
+}
+
+label{
+    font-size: 14px;
+    font-weight: 500;
+}
+i{
+    font-size: 16px;
+    margin-right: 4px;
+}
+
+
+.textbox .next{
+    background-color: tomato;
+    border: 2px solid tomato;
+    color:white;
+    border-radius: 25px;
+    width:280x;
+    margin-top: 15px;
+    box-shadow: 3px 3px 5px 6px #ccc;
+}
+
+.next:hover{
+ opacity:0.8;
+ background-color: red;
+}
+
+::placeholder{
+  
+    opacity:0.5;
+    color:grey;
+}
+
+.su{
+    text-decoration: none !important;
+    font-size: 14px;
+    text-align: left;
+    margin-left: 50px;
+    font-weight: 700;
+    margin-top: 30px;
+}
+
+.su a{
+    color:tomato;
+}
+
+.su a:hover{
+    font-size: 16px;
+}
+
+/* footer */
+
+footer{
+    padding:15px;
+    color:white;
+    font-size: 18px;
+    text-align: right;
+    background-color:#534d64 ;
+}
+
+footer a{
+    color:white;
+    text-decoration: none;
+}
+
+footer a:hover{
+    text-decoration:none;
+    font-weight:900;
+}
+
+
+/* left space for image */
+
+.left img{
+    width:600px;
+    height:400px;
+    background-size: cover;
+    margin-left: 100px;
+}
+
+/* checkbox */
+
+
+
+@media screen and (max-width: 480px) {
+   
+/* responsive */
+
+@media screen and (max-width: 480px){
+    body {
+        background-color: whitesmoke;
+        margin: 0;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    header {
+        background-color: #534d64;
+        color: white;
+        padding: 15px;
+    }
+
+    header a {
+        float: right;
+        color: white;
+        font-size: 10px;
+        text-decoration: none;
+        margin: 10px;
+        margin-top: -15px;
+    }
+
+    .logo img{
+        height: 30px; 
+        width:100px;
+        border-radius:25px;
+        float: left;
+        margin-top:-23px;
+        margin-left:0px;
+        pointer-events: none;
+    }
+    
+    header a:hover{
+        color:white;
+        font-weight:600;
+    }
+    
+    .flex{ flex-direction: column;
+        display:flex;
+        height:100%;
+    }
+
+    .left{
+        display:none;
+    }
+
+    .right{
+        width:100%;
+        position:relative;
+    }
+
+    .textbox {
+        text-align: center;
+        border: 2px solid white;
+        width: 300px;
+        height: 550px;
+        position: absolute;
+        margin-left: 65px;
+        margin-top: 20px;
+        background-color: white;
+        color: Black;
+        box-shadow: 3px 3px 5px 6px #ccc;
+    }
+
+    .textbox h1 {
+        border-bottom: 5px solid tomato;
+        width: 105px;
+        margin-left: 85px;
+        text-align: center;
+        margin-top: 20px;
+    }
+    
+    .uname{
+        color:black;
+        font-size:10px;
+        margin-left: 36px;
+        margin-top: -5px; 
+        position:absolute;
+    }
+    
+    .mobile{
+        color:black;
+        font-size:10px;
+        margin-left: 36px;
+        margin-top: -5px; 
+        position:absolute;
+    }
+    
+    .email{
+        color:black;
+        font-size:10px;
+        margin-left: 36px;
+        margin-top: -5px; 
+        position:absolute;
+    }
+    
+    .dob{
+        color:black;
+        font-size:10px;
+        margin-left: 36px;
+        margin-top:-5px; 
+        position:absolute;
+    }
+    
+    .gender{
+        color:black;
+        font-size:10px;
+        margin-left: 36px;
+        margin-top:-5px; 
+        position:absolute;
+    }
+
+    .radin{
+        display: flex;
+        margin-top: 38px;
+        margin-left: 5px ;
+        justify-content: space-evenly;
+    }
+    
+    label{
+        font-size: 10px;
+        font-weight: 500;
+        margin-top: 3px;
+    }
+    i{
+        font-size: 16px;
+        margin-right: 4px;
+    }
+    
+    footer {
+        padding: 10px;
+        color: white;
+        font-size: 10px;
+        text-align: right;
+        background-color: #534d64;
+        margin-top: 590px;
+    }
+
+
+}
+   
+
+}
